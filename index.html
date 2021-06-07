@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Burger</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 parte-sinistra">
+                <div class="row">
+                    <div class="col-12 header">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h3>Create Your Burger</h3>
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="./img/burger-top.png" alt="burger-top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 main">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Name Your Burger</h4>
+                                <h5>Ingredients</h5>
+                            </div>
+                            <div class="col-6 ingredienti-extra1">
+                                <img src="./img/cheese.svg" alt="cheese">
+                                <div>Cheese</div>
+                                <form>
+                                    <input type="checkbox" id="check-num1" class="somma" value="5 $">
+                                    <label for="check-num1">5 $</label>
+                                </form>
+                                <img src="./img/fried-egg.svg" alt="fried-egg">
+                                <div>Egg</div>
+                                <form>
+                                    <input type="checkbox" id="check-num2" class="somma" value="3 $">
+                                    <label for="check-num2">3 $</label>
+                                </form>
+                                <img src="./img/mustard.svg" alt="mustard">
+                                <div>Mustard</div>
+                                <form>
+                                    <input type="checkbox" id="check-num3" class="somma" value="2 $">
+                                    <label for="check-num3">2 $</label>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <img src="./img/tomato.svg" alt="tomato">
+                                <div>Tomato</div>
+                                <form>
+                                    <input type="checkbox" id="check-num4" class="somma" value="4 $">
+                                    <label for="check-num4">4 $</label>
+                                </form>
+                                <img src="./img/lettuce.svg" alt="lettuce">
+                                <div>Lettuce</div>
+                                <form>
+                                    <input type="checkbox" id="check-num5" class="somma" value="6 $">
+                                    <label for="check-num5">6 $</label>
+                                </form>
+                                <img src="./img/ketchup.svg" alt="ketchup">
+                                <div>Ketchup</div>
+                                <form>
+                                    <input type="checkbox" id="check-num6" class="somma" value="1 $">
+                                    <label for="check-num6">1 $</label>
+                                </form>
+                            </div>
+                            <div class="col-4">
+                                <div>Discount Coupon</div>
+                            </div>
+                            <div class="col-8">
+                                <div>12354ABCDEF</div>
+                            </div>
+                            <div class="col-12">
+                                <button id="button">calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 footer">
+                        <div class="row">
+                            <div class="col-10">Your Price</div>
+                            <div class="col-2 prezzo-finale">$ 50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 parte-destra"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+    
+</body>
+</html>

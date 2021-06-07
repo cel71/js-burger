@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.header{
+    background-color: rgb(253, 187, 64);
+    height: 120px;
+    position: relative;   
+}
+
+.header h3{
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    font-weight: bold;
+}
+
+.header img{
+    position: absolute;
+    top: -25px;
+    width: 190px;
+}
+
+/* main */
+
+.main h4{
+    margin-left: 40px;
+    margin-top: 40px;
+    color: rgb(117, 117, 117);
+}
+
+.main h5{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.ingredienti-extra1{
+
+}
+
+.ingredienti-extra1 img{
+    width: 50px;
+}
+
+/* footer */
+
+.footer{
+    background-color: rgb(211, 51, 89);
+    height: 80px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.parte-destra{
+    background-color: rgb(255, 245, 226);
+}
