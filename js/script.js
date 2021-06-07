@@ -10,7 +10,7 @@ calculateButton.addEventListener("click", function() {
         }
     }
     finalPrice.innerHTML = "$ " + risultatoFinale;
-    var applicaSconto = prompt("Inserisci il codice coupon");
+    var applicaSconto = prompt("Inserisci il codice coupon per lo sconto, premi ok o annulla senza inserire il coupon per il prezzo non scontato");
     var coupon = "12354ABCDEF";
     if (applicaSconto === coupon) {
         var risultatoFinaleScontato = risultatoFinale * 10 / 100;
@@ -20,3 +20,8 @@ calculateButton.addEventListener("click", function() {
         finalPrice.innerHTML = "$ " + risultatoFinale;
     }
 });
+
+
+
+
+
