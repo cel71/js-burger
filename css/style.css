@@ -12,11 +12,22 @@
     position: relative;   
 }
 
-.header h3{
+#burger-name{
     position: absolute;
     left: 30px;
     bottom: 20px;
     font-weight: bold;
+    font-size: 28px;
+    width: 420px;
+    background-color: rgb(253, 187, 64);
+    padding: 10px 15px;
+    border: 3px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#burger-name:hover{
+    background-color: orange;
 }
 
 .header img{

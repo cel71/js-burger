@@ -1,12 +1,14 @@
+alert("inserisci il nome del tuo Burger");
 var calculateButton = document.getElementById("button");
 var finalPrice = document.getElementsByClassName("prezzo-finale")[0];
 calculateButton.addEventListener("click", function() {
     var risultato = 0;
+    var prezzoBase = 50;
     var check = document.getElementsByClassName("somma");
     for (var i = 0; i < check.length; i++) {
         if (check[i].checked) {
             risultato += parseInt(check[i].value);
-            var risultatoFinale = risultato + 50;
+            var risultatoFinale = risultato + prezzoBase;
         }
     }
     finalPrice.innerHTML = "$ " + risultatoFinale;
@@ -15,8 +17,8 @@ calculateButton.addEventListener("click", function() {
     if (applicaSconto === coupon) {
         var risultatoFinaleScontato = risultatoFinale * 10 / 100;
         var risultatoFinaleNetto = risultatoFinale - risultatoFinaleScontato;
-        finalPrice.innerHTML = "$ " + risultatoFinaleNetto;
-    } else {
+        finalPrice.innerHTML = "$ " + risultatoFinaleNetto.toFixed(2);
+    } else if (applicaSconto.length > 0 && applicaSconto.length === 0 && applicaSconto.length !== coupon) {
         finalPrice.innerHTML = "$ " + risultatoFinale;
     }
 });
